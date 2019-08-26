@@ -1,0 +1,485 @@
+[debug] [2019-08-18T03:25:03.581Z] ----------------------------------------------------------------------
+[debug] [2019-08-18T03:25:03.583Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kaj lundqvist\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-08-18T03:25:03.583Z] CLI Version:   7.2.2
+[debug] [2019-08-18T03:25:03.583Z] Platform:      win32
+[debug] [2019-08-18T03:25:03.583Z] Node Version:  v12.6.0
+[debug] [2019-08-18T03:25:03.584Z] Time:          Sat Aug 17 2019 23:25:03 GMT-0400 (GMT-04:00)
+[debug] [2019-08-18T03:25:03.584Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-18T03:25:03.591Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-18T03:25:03.592Z] > authorizing via signed-in user
+[debug] [2019-08-18T03:25:03.592Z] [iam] checking project rest-api-c413b for permissions ["firebase.projects.get"]
+[debug] [2019-08-18T03:25:03.595Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/rest-api-c413b:testIamPermissions  
+
+[debug] [2019-08-18T03:25:04.668Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T03:25:04.669Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/rest-api-c413b  
+ 
+[debug] [2019-08-18T03:25:05.809Z] <<< HTTP RESPONSE 200
+[warn] !  Your requested "node" version "12.6.0" doesn't match your global version "12"
+[debug] [2019-08-18T03:25:05.821Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/rest-api-c413b/adminSdkConfig  
+ 
+[debug] [2019-08-18T03:25:06.942Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-18T03:25:06.991Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Cursos\restApiNodeJS\functions" for Cloud Functions...
+[debug] [2019-08-18T03:25:07.308Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:25:07.309Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:25:07.310Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:25:07.312Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:25:07.313Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:25:07.525Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[debug] [2019-08-18T03:25:07.525Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:25:07.527Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:25:07.529Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:25:07.529Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:25:07.793Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:25:07.793Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:25:07.793Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:25:07.798Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\13636"}
+[debug] [2019-08-18T03:25:07.800Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\13636"}
+[debug] [2019-08-18T03:25:07.805Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:25:07.810Z] [runtime-status] Ephemeral server survived. {}
+[info] +  functions[api]: http function initialized (http://localhost:5000/rest-api-c413b/us-central1/api).
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T03:27:33.451Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:27:33.770Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:27:33.771Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:27:33.774Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:27:33.776Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:27:33.777Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:27:34.297Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:27:34.297Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:27:34.298Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:27:34.303Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\10960"}
+[debug] [2019-08-18T03:27:34.304Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\10960"}
+[debug] [2019-08-18T03:27:34.310Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:27:34.315Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T03:27:45.571Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:27:45.889Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:27:45.890Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:27:45.892Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:27:45.894Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:27:45.895Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:27:46.414Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:27:46.414Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:27:46.414Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:27:46.419Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\472"}
+[debug] [2019-08-18T03:27:46.420Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\472"}
+[debug] [2019-08-18T03:27:46.425Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:27:46.430Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T03:28:32.761Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:28:33.076Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:28:33.076Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:28:33.079Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:28:33.081Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:28:33.082Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:28:33.581Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:28:33.581Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:28:33.581Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:28:33.586Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\6108"}
+[debug] [2019-08-18T03:28:33.587Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\6108"}
+[debug] [2019-08-18T03:28:33.592Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:28:33.596Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T03:29:43.808Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:29:44.173Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:29:44.173Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:29:44.176Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:29:44.180Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:29:44.181Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:29:44.730Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:29:44.730Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:29:44.730Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:29:44.735Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\16604"}
+[debug] [2019-08-18T03:29:44.736Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\16604"}
+[debug] [2019-08-18T03:29:44.741Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:29:44.746Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T03:33:00.839Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:33:01.273Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:33:01.274Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:33:01.276Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:33:01.277Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:33:01.279Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:33:01.863Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:33:01.863Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:33:01.863Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:33:01.869Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\3104"}
+[debug] [2019-08-18T03:33:01.869Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\3104"}
+[debug] [2019-08-18T03:33:01.875Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:33:01.880Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T03:35:15.409Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:35:15.772Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:35:15.772Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:35:15.775Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:35:15.777Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:35:15.778Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:35:16.338Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:35:16.338Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:35:16.338Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:35:16.343Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\17992"}
+[debug] [2019-08-18T03:35:16.344Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\17992"}
+[debug] [2019-08-18T03:35:16.350Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:35:16.354Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~4s
+[debug] [2019-08-18T03:36:55.900Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T03:36:56.293Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T03:36:56.294Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T03:36:56.297Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T03:36:56.300Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:36:56.301Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T03:36:56.914Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T03:36:56.914Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T03:36:56.915Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T03:36:56.919Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\5464"}
+[debug] [2019-08-18T03:36:56.920Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\5464"}
+[debug] [2019-08-18T03:36:56.926Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T03:36:56.930Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:18:28.659Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:18:29.022Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:18:29.023Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:18:29.025Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:18:29.027Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:18:29.029Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:18:29.569Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:18:29.569Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:18:29.569Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:18:29.574Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\6776"}
+[debug] [2019-08-18T04:18:29.576Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\6776"}
+[debug] [2019-08-18T04:18:29.582Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:18:29.586Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:24:09.207Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:24:09.544Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:24:09.545Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:24:09.548Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:24:09.551Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:24:09.552Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:24:10.085Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:24:10.085Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:24:10.085Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:24:10.090Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\5948"}
+[debug] [2019-08-18T04:24:10.091Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\5948"}
+[debug] [2019-08-18T04:24:10.097Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:24:10.101Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:27:45.443Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:27:45.818Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:27:45.819Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:27:45.821Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:27:45.823Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:27:45.824Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:27:46.350Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:27:46.350Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:27:46.350Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:27:46.356Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\19188"}
+[debug] [2019-08-18T04:27:46.357Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\19188"}
+[debug] [2019-08-18T04:27:46.363Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:27:46.367Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:28:32.008Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:28:32.372Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:28:32.373Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:28:32.375Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:28:32.377Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:28:32.378Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:28:32.906Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:28:32.906Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:28:32.906Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:28:32.913Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\11028"}
+[debug] [2019-08-18T04:28:32.914Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\11028"}
+[debug] [2019-08-18T04:28:32.919Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:28:32.924Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:33:45.657Z] File C:\Cursos\restApiNodeJS\functions\index.js changed, reloading triggers
+[debug] [2019-08-18T04:33:47.023Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[debug] [2019-08-18T04:33:47.024Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:33:47.027Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:33:47.029Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:33:47.030Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:24.592Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:35:24.937Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:35:24.938Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:35:24.940Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:35:24.942Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:24.943Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:25.512Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:35:25.512Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:35:25.512Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:35:25.519Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\17736"}
+[debug] [2019-08-18T04:35:25.521Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\17736"}
+[debug] [2019-08-18T04:35:25.526Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:35:25.531Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:35:42.902Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:35:43.251Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:35:43.252Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:35:43.256Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:35:43.258Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:43.259Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:43.797Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:35:43.797Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:35:43.797Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:35:43.803Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\6536"}
+[debug] [2019-08-18T04:35:43.804Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\6536"}
+[debug] [2019-08-18T04:35:43.824Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:35:43.833Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:35:44.221Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:35:44.572Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:35:44.573Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:35:44.575Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:35:44.577Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:44.578Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:35:45.132Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:35:45.132Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:35:45.132Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:35:45.140Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\2424"}
+[debug] [2019-08-18T04:35:45.141Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\2424"}
+[debug] [2019-08-18T04:35:45.147Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:35:45.153Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:38:36.764Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:38:37.114Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:38:37.115Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:38:37.118Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:38:37.121Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:38:37.122Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:38:37.676Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:38:37.677Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:38:37.677Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:38:37.683Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\1160"}
+[debug] [2019-08-18T04:38:37.684Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\1160"}
+[debug] [2019-08-18T04:38:37.688Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:38:37.692Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:38:41.800Z] Accepted request GET /rest-api-c413b/us-central1/api/pets/5d58d59f20bc3119882b2a78/dar-alta --> api
+[debug] [2019-08-18T04:38:42.148Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:38:42.149Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:38:42.152Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:38:42.154Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:38:42.155Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:38:42.694Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:38:42.694Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:38:42.694Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:38:42.699Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\5044"}
+[debug] [2019-08-18T04:38:42.700Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\5044"}
+[debug] [2019-08-18T04:38:42.705Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:38:42.710Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:38:56.430Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:38:56.765Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:38:56.766Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:38:56.768Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:38:56.770Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:38:56.771Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:38:57.279Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:38:57.279Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:38:57.279Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:38:57.285Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\13240"}
+[debug] [2019-08-18T04:38:57.286Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\13240"}
+[debug] [2019-08-18T04:38:57.291Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:38:57.295Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:39:56.242Z] Accepted request GET /rest-api-c413b/us-central1/api/pets/5d5885641c9d4400005e45b4/dar-alta --> api
+[debug] [2019-08-18T04:39:56.596Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:39:56.597Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:39:56.599Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:39:56.602Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:39:56.603Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:39:56.769Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:39:57.122Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:39:57.123Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:39:57.126Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:39:57.128Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:39:57.129Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:39:57.244Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:39:57.244Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:39:57.244Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:39:57.250Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\14948"}
+[debug] [2019-08-18T04:39:57.251Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\14948"}
+[debug] [2019-08-18T04:39:57.256Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:39:57.261Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:39:57.685Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:39:57.685Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:39:57.685Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:39:57.692Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\12652"}
+[debug] [2019-08-18T04:39:57.692Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\12652"}
+[debug] [2019-08-18T04:39:57.697Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:39:57.701Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:40:13.135Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:40:13.463Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:40:13.463Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:40:13.466Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:40:13.468Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:13.468Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:13.975Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:40:13.975Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:40:13.975Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:40:13.980Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\9392"}
+[debug] [2019-08-18T04:40:13.981Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\9392"}
+[debug] [2019-08-18T04:40:13.997Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:40:14.006Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:40:21.495Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:40:21.839Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:40:21.840Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:40:21.842Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:40:21.845Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:21.846Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:22.405Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:40:22.405Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:40:22.405Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:40:22.411Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\15628"}
+[debug] [2019-08-18T04:40:22.412Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\15628"}
+[debug] [2019-08-18T04:40:22.429Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:40:22.438Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:40:22.966Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:40:23.317Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:40:23.319Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:40:23.322Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:40:23.324Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:23.325Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:40:23.821Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:40:23.821Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:40:23.821Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:40:23.827Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\8308"}
+[debug] [2019-08-18T04:40:23.828Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\8308"}
+[debug] [2019-08-18T04:40:23.833Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:40:23.837Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:40:54.181Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:40:54.522Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:40:54.523Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:40:54.526Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:40:54.527Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:54.528Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:55.055Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:40:55.056Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:40:55.056Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:40:55.062Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\2684"}
+[debug] [2019-08-18T04:40:55.063Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\2684"}
+[debug] [2019-08-18T04:40:55.068Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:40:55.072Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:40:57.059Z] Accepted request GET /rest-api-c413b/us-central1/api/pets/5d58d6b65c4a9c3d0ce60345/dar-alta --> api
+[debug] [2019-08-18T04:40:57.385Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:40:57.386Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:40:57.388Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:40:57.390Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:57.391Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:57.930Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:40:57.931Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:40:57.931Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:40:57.936Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\1496"}
+[debug] [2019-08-18T04:40:57.938Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\1496"}
+[debug] [2019-08-18T04:40:57.943Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:40:57.949Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:40:58.801Z] Accepted request GET /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:40:59.134Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:40:59.135Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:40:59.139Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:40:59.140Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:40:59.141Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:40:59.677Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:40:59.677Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:40:59.677Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:40:59.682Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\18344"}
+[debug] [2019-08-18T04:40:59.683Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\18344"}
+[debug] [2019-08-18T04:40:59.689Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:40:59.694Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:41:54.981Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:41:55.456Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:41:55.457Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:41:55.459Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:41:55.461Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:55.462Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:56.012Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:41:56.174Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:41:56.174Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:41:56.174Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:41:56.180Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\1200"}
+[debug] [2019-08-18T04:41:56.181Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\1200"}
+[debug] [2019-08-18T04:41:56.200Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:41:56.208Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:41:56.491Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:41:56.550Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:41:56.557Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:41:56.560Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:41:56.566Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:56.567Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:56.640Z] Accepted request POST /rest-api-c413b/us-central1/api/pets --> api
+[debug] [2019-08-18T04:41:57.532Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:41:57.533Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:41:57.571Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:41:57.575Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:57.588Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:57.730Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Cursos\\restApiNodeJS\\functions","node_version":"12.6.0"}
+[info] i  functions: Beginning execution of "api"
+[debug] [2019-08-18T04:41:57.734Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-08-18T04:41:57.741Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-18T04:41:57.748Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-18T04:41:57.750Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Cursos\\restApiNodeJS\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2019-08-18T04:41:58.259Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:41:58.260Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:41:58.260Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:41:58.267Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\8720"}
+[debug] [2019-08-18T04:41:58.277Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\8720"}
+[debug] [2019-08-18T04:41:58.301Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:41:58.312Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:41:59.024Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:41:59.024Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:41:59.024Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:41:59.033Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\19048"}
+[debug] [2019-08-18T04:41:59.034Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\19048"}
+[debug] [2019-08-18T04:41:59.056Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:41:59.071Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-08-18T04:41:59.221Z] [runtime-status] Trigger "api" has been found, beginning invocation! {}
+[debug] [2019-08-18T04:41:59.221Z] [runtime-status]  {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2019-08-18T04:41:59.221Z] [runtime-status] Running api in mode HTTPS {}
+[debug] [2019-08-18T04:41:59.231Z] {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\4396"}
+[debug] [2019-08-18T04:41:59.232Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\C:\\Cursos\\restApiNodeJS\\functions\\4396"}
+[debug] [2019-08-18T04:41:59.268Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-08-18T04:41:59.280Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "api" in ~1s
+[info] i  functions: Finished "api" in ~1s
+[info] i  functions: Finished "api" in ~1s
